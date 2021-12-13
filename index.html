@@ -4,7 +4,7 @@
         
         <title>Akea-Minimal Blog Theme</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="first-page.css">
+        <link rel="stylesheet" type="text/css" href="./CSS-File/first-page.css">
 
         <meta charset="utf-8" />
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
@@ -32,8 +32,10 @@
                             <button class="dropbtn">
                                 Home
                                 <i class="fa fa-caret-down"></i>
+                                <div class="psudo"><span>-</span></div>
+                               
                             </button>
-                    
+                            
                             <div class="dropdown-content">
                         
                                 <a class="line-distance" href="#">Homepage 1</a>
@@ -41,12 +43,18 @@
                                 <a href="#">Homepage 3</a>
                         
                             </div>
+                            
                         </div>
+                        
+                
                     
                         <div class="dropdown">
                             <button class="dropbtn">
                                 Pages
                                 <i class="fa fa-caret-down"></i>
+
+                                <div class="psudo"><span>-</span></div>
+
                             </button>
                             <div class="dropdown-content">
                         
@@ -65,6 +73,9 @@
                             <button class="dropbtn">
                                 Category
                                 <i class="fa fa-caret-down"></i>
+
+                                <div class="psudo"><span>-</span></div>
+
                             </button>
                             <div class="dropdown-content">
                         
@@ -82,6 +93,9 @@
                             <button class="dropbtn">
                                 Layout
                                 <i class="fa fa-caret-down"></i>
+
+                                <div class="psudo"><span>-</span></div>
+
                             </button>
 
                             <div class="dropdown-content">
@@ -181,12 +195,20 @@
 
                         </div>
                     
-                        <a href="#news">About</a>
+                        <div class="about-dropdown">
+
+                            <a class="about" href="#news">About</a>
+                            <div class="psudo"><span>-</span></div>
+                            
+                        </div>
                     
-                        <div class="dropdown">
-                            <button class="dropbtn">
+                        <div class="features-dropdown">
+                            <button class="features-dropbtn">
                                 Features 
                                 <i class="fa fa-caret-down"></i>
+
+                                <div class="psudo"><span>-</span></div>
+
                             </button>
 
                             <div class="features">
@@ -249,6 +271,7 @@
                         <a href="#" class="fa fa-vimeo"></a>
                     
                         <div id="search"><img  src="pics/search.png"></div>
+                        <img class="responsive-menu" src="/pics/responsive-menu.png">
                 
                     </div>
             
@@ -294,32 +317,50 @@
                 
                     <div class="recent-articles-posts-1-2">
         
-                        <div id="post-1">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-1-img" src="pics/post1.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post1.jpg"></div>
+
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/like.png">
                                     <p class="like-number">251</p>
+                    
+                                </div>
+
+                                <div class="sticky-post">
+                
+                                    <img class="sticky-img" src="pics/sticky-post.png"> Sticky Post
                     
                                 </div>
                             
                             </div>
 
                             <div class = "post-texts">
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
+                                </div>
                 
-                                <p class="post-type">TRENDING</p>
-                    
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/check-out-the-most-awesome-vr-headset-in-2020/"><p>Check Out The Most Awesome VR Headset in 2020</p></a>
-                    
-                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/check-out-the-most-awesome-vr-headset-in-2020/">Check Out The Most Awesome VR Headset in 2020</a>
+                                    
+                                </h3>
+                                        
+                                <p class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
                     
                                 </div>
@@ -340,20 +381,16 @@
                     
                             </div>
                 
-                            <div id="sticky-post">
-                
-                                <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
-                
-                            </div>
+                            
             
                         </div>
 
-                        <div id="post-4">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-4-img" src="pics/post4.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post4.jpg"></div>
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/empty%20heart.png">
                                     <p class="like-number">63</p>
@@ -363,17 +400,28 @@
                             </div>
 
                             <div class = "post-texts">
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
+                                </div>
                 
-                                <p class="post-type">TRENDING</p>
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/08/twitters-new-head-quarter-that-has-many-new-technologies/">Twitter’s New Head Quarter That Has Many New Technologies</a>
+                                    
+                                </h3>
                     
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/08/twitters-new-head-quarter-that-has-many-new-technologies/"><p>Twitter’s New Head Quarter That Has Many New Technologies</p></a>
-                    
-                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
+                                <p class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 8, 2018</a>
                      
                                 </div>
@@ -400,12 +448,12 @@
 
                     <div class="recent-articles-posts-1-2">
 
-                        <div id="post-2">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-2-img" src="pics/post2.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post2.jpg"></div>
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/like.png">
                                     <p class="like-number">308</p>
@@ -414,17 +462,28 @@
                             
                             </div>
                             <div class = "post-texts">
-                
-                                <p class="post-type">TRENDING</p>
-                   
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/or-its-now-the-end-of-smartphones/"><p>Or It’s Now The End of Smartphones?</p></a>
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
+                                </div>
+                                 
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/or-its-now-the-end-of-smartphones/">Or It’s Now The End of Smartphones?</a>
+
+                                </h3>
                     
-                                <div class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</div>
+                                <p class="post-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >KELLY GORDON</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
                       
                                 </div>
@@ -447,12 +506,12 @@
                 
                         </div>
 
-                        <div id="post-5">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-5-img" src="pics/post5.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post5.jpg"></div>
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/empty%20heart.png">
                                     <p class="like-number">176</p>
@@ -462,21 +521,29 @@
                             </div>
 
                             <div class = "post-texts">
-                
-                                <div id="recent-two-type">
-                                    <p class="post-type">TECHNOLOGY</p>
-                                    <p id="recent-cama">,</p>
-                                    <p id="recent-type">TRENDING</p>
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name-1" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TECHNOLOGY</a>
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
                                 </div>
+                
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/or-its-now-the-end-of-smartphones/">8 Most Awesome Gadgets For 2019</a>
+
+                                </h3>
                    
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/07/8-most-awesome-gadgets-for-2019/"><p>8 Most Awesome Gadgets For 2019</p></a>
-                    
-                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                                <p class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >JAMES SMITH</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 7, 2018</a>
                     
                                 </div>
@@ -503,12 +570,12 @@
 
                     <div class="recent-articles-posts-3">
 
-                        <div id="post-3">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-3-img" src="pics/post3.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post3.jpg"></div>
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/like.png">
                                     <p class="like-number">163</p>
@@ -518,17 +585,28 @@
                             </div>
                 
                             <div class = "post-texts">
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
+                                </div>
                 
-                                <p class="post-type">TRENDING</p>
-                            
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/xe-entertainment-brings-you-new-experience-of-fun/"><p>XE Entertainment Brings You New Experience of Fun</p></a>
-                    
-                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/xe-entertainment-brings-you-new-experience-of-fun/">XE Entertainment Brings You New Experience of Fun</a>
+
+                                </h3>
+                                             
+                                <p class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 7, 2018</a>
                      
                                 </div>
@@ -551,12 +629,12 @@
                
                         </div>
 
-                        <div id="post-6">
+                        <div class="post">
             
                             <div class="img">
                                 
-                                <div class="img-container"><img id="post-6-img" src="pics/post6.jpg"></div>
-                                <div class="post-circle">
+                                <div class="img-container"><img class="post-img" src="pics/post6.jpg"></div>
+                                <div id="recent-post-circle-position" class="post-circle">
                     
                                     <img class="like" src="pics/empty%20heart.png">
                                     <p class="like-number">104</p>
@@ -566,17 +644,28 @@
                             </div>
                 
                             <div class = "post-texts">
+
+                                <div class="post-type">
+
+                                    <span class="type-container">
+
+                                        <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a>
+
+                                    </span>
+
+                                </div>
                 
-                                <p class="post-type">TRENDING</p>
-                       
-                                <a class="post-title-link" href="https://demo.goodlayers.com/akea/homepage2/2018/09/16/top-10-beautiful-beach-must-visit/"><p>Top 10 Beautiful Beach Must Visit</p></a>
-                    
-                                <div class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</div>
+                                <h3 class="post-title-link">
+
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/16/top-10-beautiful-beach-must-visit/">Top 10 Beautiful Beach Must Visit</a>
+
+                                </h3>
+                                           
+                                <p class="post-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                                 <div class="post-author-date-link">
                     
                                     <a class="post-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                    <p class="dash">-</p>
                                     <a class="post-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 16, 2018</a>
                     
                                 </div>
@@ -641,7 +730,7 @@
 
                             </div>
 
-                            <div id="big-post-circle">
+                            <div id="tech-post-circle-position" class="post-circle">
                 
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">71</p>
@@ -652,11 +741,11 @@
                 
                         
                 
-                        <div id="post-title">
+                        <h2 id="post-title">
                 
-                            <a id="big-post-title" href="https://demo.goodlayers.com/akea/homepage2/2018/11/08/check-out-new-trendy-smart-phones-in-next-decade/"><h4>Check Out New Trendy Smart Phones in Next Decade</h4></a>
+                            <a id="big-post-title" href="https://demo.goodlayers.com/akea/homepage2/2018/11/08/check-out-new-trendy-smart-phones-in-next-decade/">Check Out New Trendy Smart Phones in Next Decade</a>
                     
-                        </div>
+                        </h2>
                 
                         <div id="post-details">
                 
@@ -664,17 +753,11 @@
                             <img id="author-pic" src="pics/author-pic.jpeg">
                                         
                             <span class="detail-text">JOHN SMITH</span>
-                    
-                            <span class="big-post-dash">-</span>
-                    
+                                       
                             <span class="detail-text">NOVEMBER 8, 2018</span>
-                    
-                            <span class="big-post-dash">-</span>
-                    
+                                        
                             <span class="detail-text">TECHNOLOGY</span>
-                    
-                            <span class="big-post-dash">-</span>
-                            
+                                                
                         </div>
                 
                         <p id="big-title-summary">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the...</p>
@@ -720,15 +803,15 @@
                             <div class="other-post-detail">
                     
                                 <div class="tech-type"><a  href="https://demo.goodlayers.com/akea/homepage2/category/technology/">TECHNOLOGY</a></div>
-                                <div class="other-post-title">
+                                
+                                <h4 class="other-post-title">
                                     
-                                    <h4> It Safe to Have These Things Listening to Us?</h4>
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/25/is-it-safe-to-have-these-things-listening-to-us/"> It Safe to Have These Things Listening to Us?</a>
                                     
-                                </div>
+                                </h4>
                                 <div class="other-post-author">
                         
                                     <a class="other-date" href="https://demo.goodlayers.com/akea/homepage2/2018/09/25/">SEPTEMBER 25,2018</a>
-                                    <span class="other-one-dash">-</span>
                                     <a class="other-comment"><img class="other-comment-img" src="pics/comments.png"></a>
                                     <span class="other-comment-number">0</span>
                         
@@ -752,16 +835,18 @@
                                     <div class="tech-type"><a  href="https://demo.goodlayers.com/akea/homepage2/category/technology/">TECHNOLOGY,</a></div>
                                     <div class="tech-type"><a href="https://demo.goodlayers.com/akea/homepage2/category/trending/">TRENDING</a></div>
                                 </div>   
+
+                                <h4 class="other-post-title">
+                                    
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/07/8-most-awesome-gadgets-for-2019/"> Most Awesome Gadgets For 2019</a>
+                                    
+                                </h4>
                         
-                                <div class="other-post-title">
-                                    <h4> Most Awesome Gadgets For 2019</h4>
-                                </div>
                                 <div class="other-post-author">
                         
                                     <a class="other-date" href="https://demo.goodlayers.com/akea/homepage2/2018/09/07/">SEPTEMBER 7,2018</a>
-                                    <span class="other-one-dash">-</span>
                                     <a class="other-comment"><img class="other-comment-img" src="pics/comments.png"></a>
-                                    <span class="fashion-comment-number">0</span>
+                                    <span class="other-comment-number">0</span>
                         
                                 </div>
                     
@@ -783,14 +868,16 @@
                                     <div class="tech-type"><a  href="https://demo.goodlayers.com/akea/homepage2/category/technology/">TECHNOLOGY,</a></div>
                                     <div class="tech-type"><a href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a></div>     
                                 </div>
+
+                                <h4 class="other-post-title">
+                                    
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/08/17/top-15-social-network-app-you-need-to-travel/"> Top 15 Social Network App You Need To Travel</a>
+                                    
+                                </h4>
                             
-                                <div class="other-post-title">
-                                    <h4>Top 15 Social Network App You Need To Travel</h4>
-                                    </div>
                                 <div class="other-post-author">
                         
                                     <a class="other-date" href="https://demo.goodlayers.com/akea/homepage2/2018/08/17/">AUGUST 17,2018</a>
-                                    <span class="other-one-dash">-</span>
                                     <a class="other-comment"><img class="other-comment-img" src="pics/comments.png"></a>
                                     <span class="other-comment-number">0</span>
                         
@@ -811,13 +898,16 @@
                             <div class="other-post-detail">
                     
                                 <div class="tech-type"><a href="https://demo.goodlayers.com/akea/homepage2/category/technology/">TECHNOLOGY</a></div>
-                                <div class="other-post-title">
-                                    <h4>Apple &amp; USB-C, The Future To Bet On</h4>
-                                </div>
+                                
+                                <h4 class="other-post-title">
+                                    
+                                    <a href="https://demo.goodlayers.com/akea/homepage2/2018/06/21/apple-usb-c-the-future-to-bet-on/"> Apple &amp; USB-C, The Future To Bet On</a>
+                                    
+                                </h4>
+                                
                                 <div class="other-post-author">
                         
                                     <a class="other-date" href="https://demo.goodlayers.com/akea/homepage2/2018/06/21/">JUNE 21,2018</a>
-                                    <span class="other-one-dash">-</span>
                                     <a class="other-comment"><img class="other-comment-img" src="pics/comments.png"></a>
                                     <span class="other-comment-number">0</span>
                         
@@ -872,7 +962,7 @@
                         <div class="fashion-img">
                         
                             <div class="fash-img"><img id="fs-img-1" src="pics/fashion%201.jpeg"></div>
-                            <div class="fs-img-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/like.png">
                                 <p class="like-number">39</p>
@@ -884,25 +974,21 @@
 
                         <div id="fashion-post-detail-1">
                     
-                            <div class="fashion-post-title">
+                            <h4 class="fashion-post-title">
                                 
-                                <h4>5 Beginner Photographer’s Mistakes</h4>
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/10/22/5-beginner-photographers-mistakes/">5 Beginner Photographer’s Mistakes</a>
                             
-                            </div>
+                            </h4>
+
                             <div class="fashion-post-author">
                         
                                 <img id="fashion-author-pic" src="pics/fashion%20auth%201.jpeg">
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/author/author3/">JANET JONES</a>
-                                <span class="big-post-dash">_</span>
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/2018/09/25/">OCTOBER 22,2018</a>
-                                <span class="big-post-dash">_</span>
-                                <span class="detail-text"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
-                                <span id="fashion-cama-1">,</span>
+                                <span class="detail-text-1"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
                                 <span class="detail-text"><a href="https://demo.goodlayers.com/akea/homepage2/category/photography/">PHOTOGRAPHY</a></span>     
-                                <span class="big-post-dash">_</span>
                                 <a class="fashion-comment"><img class="fashion-comment-img" src="pics/comments.png"></a>
-                                <span class="fashion-com-num">0</span>
-                                <span class="big-post-dash">_</span>
+                                <span class="fashion-comment-number">0</span>
                         
                             </div>
                         
@@ -919,7 +1005,7 @@
                         <div class="fashion-img">
                         
                             <div class="fash-img"><img id="fs-img-2" src="pics/fashion%202.jpg"></div>
-                            <div class="fs-img-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">26</p>
@@ -929,26 +1015,22 @@
                         </div>
                     
                         <div id="fashion-post-detail-2">
+
+                            <h4 class="fashion-post-title">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/10/05/12-awesome-fashion-trend-in-for-winter/">12 Awesome Fashion Trend in For Winter</a>
+                            
+                            </h4>
                     
-                            <div class="fashion-post-title">
-
-                                <h4>12 Awesome Fashion Trend in For Winter</h4>
-                            </div>
-
                             <div class="fashion-post-author">
                         
                                 <img id="fashion-author-pic" src="pics/fashion%20auth%202.jpeg">
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/author/author4/">KELLY GORDON</a>
-                                <span class="big-post-dash">_</span>
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/2018/10/05/">OCTOBER 5,2018</a>
-                                <span class="big-post-dash">_</span>
-                                <span class="detail-text"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
-                                <span id="fashion-cama-2">,</span>
+                                <span class="detail-text-1"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
                                 <span class="detail-text"><a href="https://demo.goodlayers.com/akea/homepage2/category/photography/">PHOTOGRAPHY</a></span>     
-                                <span class="big-post-dash">_</span>
                                 <a class="fashion-comment"><img class="fashion-comment-img" src="pics/comments.png"></a>
                                 <span class="fashion-comment-number">0</span>
-                                <span class="big-post-dash">_</span>
                         
                             </div>
                         
@@ -965,7 +1047,7 @@
                         <div class="fashion-img">
                         
                             <div class="fash-img"><img id="fs-img-3" src="pics/fashion%203.jpg"></div>
-                            <div class="fs-img-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">38</p>
@@ -975,26 +1057,22 @@
                         </div>
                     
                         <div id="fashion-post-detail-3">
-                    
-                            <div class="fashion-post-title">
 
-                                <h4>Overall of Fashion Week in Madrid</h4>
+                            <h4 class="fashion-post-title">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/19/overall-of-fashion-week-in-madrid/">Overall of Fashion Week in Madrid</a>
                             
-                            </div>
+                            </h4>
+                    
                             <div class="fashion-post-author">
                         
                                 <img id="fashion-author-pic" src="pics/fashion%20auth%203.jpeg">
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/author/author1/">JANE SMITH</a>
-                                <span class="big-post-dash">_</span>
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/2018/09/19/">SEPTEMBER 19,2018</a>
-                                <span class="big-post-dash">_</span>
-                                <span class="detail-text"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
-                                <span id="fashion-cama-3">,</span>
+                                <span class="detail-text-1"><a  href="https://demo.goodlayers.com/akea/homepage2/category/fashion/">FASHION</a></span>
                                 <span class="detail-text"><a href="https://demo.goodlayers.com/akea/homepage2/category/photography/">PHOTOGRAPHY</a></span>     
-                                <span class="big-post-dash">_</span>
                                 <a class="fashion-comment"><img class="fashion-comment-img" src="pics/comments.png"></a>
                                 <span class="fashion-comment-number">0</span>
-                                <span class="big-post-dash">_</span>
                         
                             </div>
                         
@@ -1011,7 +1089,7 @@
                         <div class="fashion-img">
                         
                             <div class="fash-img"><img id="fs-img-4" src="pics/fashion%204.jpg"></div>
-                            <div class="fs-img-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">31</p>
@@ -1021,21 +1099,21 @@
                         </div>
                     
                         <div id="fashion-post-detail-4">
-                                                    
-                            <h4 class="fashion-post-title">The Best to Dress Up on Friday Night</h4>
+
+                            <h4 class="fashion-post-title">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/08/22/the-best-to-dress-up-on-friday-night/">The Best to Dress Up on Friday Night</a>
                             
+                            </h4>
+                                  
                             <div class="fashion-post-author">
                         
                                 <img id="fashion-author-pic" src="pics/fashion%20auth%204.png">
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/author/superuser/">JAMES SMITH</a>
-                                <span class="big-post-dash">_</span>
                                 <a class="detail-text" href="https://demo.goodlayers.com/akea/homepage2/2018/08/22/">AUGUST 22,2018</a>
-                                <span class="big-post-dash">_</span>
-                                <span id="fashion-type"><a href="https://demo.goodlayers.com/akea/homepage2/category/technology/">FASHION</a></span>
-                                <span class="big-post-dash">_</span>
+                                <span class="detail-text"><a href="https://demo.goodlayers.com/akea/homepage2/category/technology/">FASHION</a></span>
                                 <a class="fashion-comment"><img class="fashion-comment-img" src="pics/comments.png"></a>
                                 <span class="fashion-comment-number">0</span>
-                                <span class="big-post-dash">_</span>
                         
                             </div>
                         
@@ -1111,28 +1189,46 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%201.jpg"></div>
-                            <div class="travel-circle">
+
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">24</p>
                     
                             </div>
+
+                            <div class="sticky-post">
+                
+                                <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
+                    
+                            </div>
                         
                         </div>
                         <div class = "travel-texts">
+
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name-1" href="https://demo.goodlayers.com/akea/homepage2/category/food/">FOOD</a>
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
                 
-                            <p class="travel-type">FOOD, TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">5 Amazing Places To Visit In Summer</h4>
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/06/02/5-amazing-places-to-visit-in-summer/">5 Amazing Places To Visit In Summer</a>
+                            
+                            </h4>
                     
                             <p class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">June 2, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">June 2, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1154,12 +1250,6 @@
                     
                         </div>
                 
-                        <div id="travel-sticky-post">
-                
-                            <img id="sticky-img" src="pics/sticky-post.png"> Sticky Post
-                
-                        </div>
-            
                     </div>
 
                     <div class="travel">
@@ -1167,7 +1257,7 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%202.jpeg"></div>
-                            <div class="travel-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <div class="travel-images"><img class="like" src="pics/empty%20heart.png"></div>
                                 <p class="like-number">54</p>
@@ -1177,19 +1267,29 @@
                         </div>
 
                         <div class = "travel-texts">
+
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
                 
-                            <p class="travel-type">TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">9 Most Awesome Blue Lake With Snow Mountain</h4>
-                    
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/11/03/9-most-awesome-blue-lake-with-snow-mountain/">9 Most Awesome Blue Lake With Snow Mountain</a>
+                            
+                            </h4>
+                                       
                             <p class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 3, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">November 3, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1218,7 +1318,7 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%203.jpg"></div>
-                            <div class="travel-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">36</p>
@@ -1229,18 +1329,28 @@
 
                         <div class = "travel-texts">
                 
-                            <p class="travel-type">TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">8 Ways To Travel Like a Pro</h4>
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
+
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/10/26/8-ways-to-travel-like-a-pro/">8 Ways To Travel Like a Pro</a>
+                            
+                            </h4>
                     
                             <p class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Kelly Gordon</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 26, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 26, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1269,7 +1379,7 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%204.jpg"></div>
-                            <div class="travel-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">26</p>
@@ -1278,19 +1388,30 @@
                         
                         </div>
                         <div class = "travel-texts">
+
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name-1" href="https://demo.goodlayers.com/akea/homepage2/category/headline/">HEADLINE</a>
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
                 
-                            <p class="travel-type">HEADLINE, TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">10 Most Awesome Breathtaking Places</h4>
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/10/18/10-most-awesome-breathtaking-places/">10 Most Awesome Breathtaking Places</a>
+                            
+                            </h4>
                     
                             <p class="travel-summery">I neglect my talents Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >Jane Smith</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 28, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">October 28, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1319,7 +1440,7 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%205.jpeg"></div>
-                            <div class="travel-circle">
+                            <div class="post-circle fashion-post-circle-position"">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">38</p>
@@ -1328,19 +1449,29 @@
                         
                         </div>
                         <div class = "travel-texts">
+
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
                 
-                            <p class="travel-type">TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">Gutenberg Post Ex 3</h4>
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/09/03/gutenberg-post-ex-3/">Gutenberg Post Ex 3</a>
+                            
+                            </h4>
                     
                             <p class="travel-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 3, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">September 3, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1369,7 +1500,7 @@
                         <div class="travel-img">
                             
                             <div class="travel-images"><img class="trav-img" src="pics/travel%206.jpg"></div>
-                            <div class="travel-circle">
+                            <div class="post-circle fashion-post-circle-position">
                     
                                 <img class="like" src="pics/empty%20heart.png">
                                 <p class="like-number">28</p>
@@ -1379,19 +1510,30 @@
                         </div>
 
                         <div class = "travel-texts">
+
+                            <div class="travel-post-type">
+
+                                <span class="type-container">
+
+                                    <a class="type-name-1" href="https://demo.goodlayers.com/akea/homepage2/category/technology/">TECHNOLOGY</a>
+                                    <a class="type-name" href="https://demo.goodlayers.com/akea/homepage2/category/travel/">TRAVEL</a>
+
+                                </span>
+
+                            </div>
                 
-                            <p class="travel-type">TECHNOLOGY, TRAVEL</p>
-                    
-                            <h4 class="travel-title-link">Top 15 Social Network App You Need To Travel</h4>
+                            <h4 class="travel-title-link">
+                                
+                                <a href="https://demo.goodlayers.com/akea/homepage2/2018/08/17/top-15-social-network-app-you-need-to-travel/">Top 15 Social Network App You Need To Travel</a>
+                            
+                            </h4>
                     
                             <p class="travel-summery">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live...</p>
                     
                             <div class="travel-author-date-link">
                     
                                 <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/author/author1/" >James Smith</a>
-                                <span class="travel-dash">-</span>
-                                <a class="travel-date" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">August 17, 2018</a>
-                                <span class="travel-dash">-</span>
+                                <a class="travel-author-name" href="https://demo.goodlayers.com/akea/homepage2/2018/11/07/">August 17, 2018</a>
                                 <a class="travel-comment"><img class="travel-comment-img" src="pics/comments.png"></a>
                                 <span class="travel-comment-number">0</span>
                     
@@ -1566,72 +1708,72 @@
             
             <div id="part-3">
             
-                <div id="menu-pic-1">
+                <div class="menu-pic">
                 
-                    <img id="pic-1" src="pics/bot-menu-1.jpg">
+                    <img class="bottom-menu-pic" src="pics/bot-menu-1.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-2">
+                <div class="menu-pic">
                 
-                    <img id="pic-2" src="pics/travel%201.jpg">
+                    <img class="bottom-menu-pic" src="pics/travel%201.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-3">
+                <div class="menu-pic">
                 
-                    <img id="pic-3" src="pics/big-tech-post.jpg">
+                    <img class="bottom-menu-pic" src="pics/big-tech-post.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-4">
+                <div class="menu-pic">
                 
-                    <img id="pic-4" src="pics/post2.jpg">
+                    <img class="bottom-menu-pic" src="pics/post2.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-5">
+                <div class="menu-pic">
                 
-                    <img id="pic-5" src="pics/post3.jpg">
+                    <img class="bottom-menu-pic" src="pics/post3.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-6">
+                <div class="menu-pic">
                 
-                    <img id="pic-6" src="pics/amazing.jpeg">
+                    <img class="bottom-menu-pic" src="pics/amazing.jpeg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-7">
+                <div class="menu-pic">
                 
-                    <img id="pic-7" src="pics/travel%202.jpeg">
+                    <img class="bottom-menu-pic" src="pics/travel%202.jpeg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-8">
+                <div class="menu-pic">
                 
-                    <img id="pic-8" src="pics/travel%203.jpg">
+                    <img class="bottom-menu-pic" src="pics/travel%203.jpg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-9">
+                <div class="menu-pic">
                 
-                    <img id="pic-9" src="pics/fashion%201.jpeg">
+                    <img class="bottom-menu-pic" src="pics/fashion%201.jpeg">
                     
                     
                 </div>
                 
-                <div id="menu-pic-10">
+                <div class="menu-pic">
                 
-                    <img id="pic-10" src="pics/breathtaking%20places.jpg">
+                    <img class="bottom-menu-pic" src="pics/breathtaking%20places.jpg">
                     
                     
                 </div>
